@@ -5,29 +5,27 @@
 
 $(function() {
 
+    $(document).on('click', '#button', function () {
 
 
-    $('#wiersze').on('off', function() {
-        alert($(this).val());
-    });
+            $('tr').remove();
+            $('#wstaw').remove();
 
 
+        // $("#wiersze").attr('value', '45');
 
 
+        $('#wiersze').val(40);
 
-    $('#button').on('click', function(event) {
-
-        $('tr').remove();
-        $('#wstaw').remove();
-
-
-        $("#wiersze").attr('value', '45');
-
-
-        alert($('#wiersze').val());
 
         var wiersze = $('#wiersze').val();
 
+        if(wiersz>30){
+
+            $('#wiersze').val(29);
+
+        }
+        
         for(i=0; i<wiersze; i++){
             $('#pixel_canvas').append("<tr></tr>");
 
