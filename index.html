@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/reset.min.css">
+
+
+    </head>
+    <body>
+
+    <div id="draw">
+
+    <div id="section1">
+    <h1 id="title">Pixel Art Maker</h1>
+    </div>
+
+
+    <div id="section2">
+        <p id="size">Size: <span id="wstaw"></span></p>
+        <table id="pixel_canvas"></table>
+
+    </div>
+
+    <div id="section3">
+        <h2 class="subtitle">Choose Grid Size:</h2>
+        <form id="sizePicker">
+            <span id="row">Row:</span>
+            <input type="number" title="Max row is 25" id="wiersze" name="height" min="1" max="40" value="5">
+            <span>Column:</span>
+            <input type="number" title="Max column is 25" id="kolumny" name="width" min="1" value="1">
+
+        </form>
+        <button id="button"> Draw </button>
+        <h2 class="subtitle">Pick A Color:</h2>
+
+        <div class="allPick">
+            <div class="colorPick" id="color1"></div>
+            <div class="colorPick"  id="color2"></div>
+            <div class="colorPick"  id="color3"></div>
+            <div class="colorPick"  id="color4"></div>
+            <div class="colorPick"  id="color5"></div>
+            <div class="colorPick"  id="color6"></div>
+            <div class="colorPick"  id="color7"></div>
+            <div class="colorPick"  id="color8"></div>
+            <div class="colorPick"  id="color9"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+
+    </body>
+</html>
+
+

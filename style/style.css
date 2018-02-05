@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+body {
+    text-align: center;
+    background-color: #ffeeb8;
+
+    height: 100%;
+}
+
+#draw {
+    width:1000px;
+    background-color: white;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+#title {
+    font-size: 45px;
+    padding: 100px;
+    padding-top: 70px;
+}
+
+.subtitle {
+    font-size: 16px;
+    padding: 20px;
+}
+
+#sizePicker {
+    margin-top: 20px;
+}
+
+#size {
+    padding-top: 20px;
+}
+
+#button {
+    font-size: 13px;
+    margin: 25px 0 0 15px;
+
+    width: 90px;
+    height: 40px;
+    background-color: #f0ecd3;
+
+    border-top: 3px solid lightgray;
+    border-left: 3px solid lightgray;
+
+    border-right: 3px solid grey;
+    border-bottom: 3px solid grey;
+    outline: inherit;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #d9d6be;
+}
+
+#size {
+    text-align: center;
+    margin: 0 auto;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 25px;
+}
+
+td {
+    width: 25px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.colorPick {
+    width: 60px;
+    height: 60px;
+    border: 2px black solid;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.allPick {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#pixel_canvas{
+   margin: auto auto;
+}
+
+#color1 {
+    background-color: #7796C2;
+}
+
+#color2{
+   background-color: #77C2BD;
+}
+
+
+#color3{
+    background-color: #71C87F;
+}
+
+#color4 {
+    background-color: #BFE553;
+}
+
+#color5 {
+    background-color: #E1CF58;
+}
+
+#color6 {
+    background-color: #F5AC44;
+}
+
+#color7 {
+    background-color: #FF763A;
+}
+
+#color8 {
+    background-color: #FF3A49;
+}
+#color9 {
+    background-color: #FF3A81;
+}
+
+.red-cell {
+    background: #F00; /* Or some other color */
+}
+
+td {
+    cursor: pointer;
+}
+
+#pixel_canvas td {
+    border: 1px solid black;
+
+}
+
+
+#section1 {
+    height: 20%;
+
+}
+
+
+#section2{
+    height:50%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#section3{
+    height: 30%;
+
+}
