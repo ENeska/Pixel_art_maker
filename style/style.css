@@ -11,7 +11,7 @@
 
 body {
     text-align: center;
-    background-color: #ffeeb8;
+    background-color: #9a9a9a;
 
     height: 100%;
 }
@@ -19,6 +19,7 @@ body {
 #draw {
     width:1000px;
     background-color: white;
+
     margin: 0 auto;
     height: 100%;
 }
@@ -89,7 +90,21 @@ td {
 }
 
 input[type=number] {
-    width: 6em;
+    width: 60px;
+    height: 30px;
+
+    padding-left: 10px;
+
+
+    background-color: #f9f5db;
+
+    border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+
+    border-left: 3px solid grey;
+    border-top: 3px solid grey;
+
+
 }
 
 .colorPick {
@@ -162,20 +177,37 @@ td {
 
 
 #section1 {
-    height: 20%;
-
+    height: 15%;
+    background-color: #9a9a9a;
 }
 
 
 #section2{
     height:50%;
-
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 #section3{
-    height: 30%;
+    height: 35%;
+    background-color: #9a9a9a;
+}
 
+input:focus{
+    background-color: #f0ecd3;
+    outline: none;
+
+}
+
+
+#tekst {
+    padding-top: 10px;
+    font-size: 12px;
+    height: 30px;
+}
+
+#tekst p {
+    padding-bottom: 5px;
 }

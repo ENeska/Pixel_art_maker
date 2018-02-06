@@ -5,43 +5,62 @@
 
 $(function() {
 
-    $(document).on('click', '#button', function () {
 
 
-            $('tr').remove();
-            $('#wstaw').remove();
-
-
-        // $("#wiersze").attr('value', '45');
-
-
-        $('#wiersze').val(40);
-
-
-        var wiersze = $('#wiersze').val();
-
-        if(wiersz>30){
-
-            $('#wiersze').val(29);
-
-        }
-        
+    function tablica(){
         for(i=0; i<wiersze; i++){
             $('#pixel_canvas').append("<tr></tr>");
 
-            var kolumny = $('#kolumny').val();
+
             $('tr').addClass("table");
             for(j=0; j<kolumny; j++){
 
                 $('tr:last').append("<td></td>");
             }
-
-
         }
+    }
 
-        $('#size').append("<span id='wstaw'></span>");
+    $(document).on('click', '#button', function () {
 
-        $('#wstaw').append(wiersze+ " x " + kolumny);
+            $('tr').remove();
+            $('#wstaw').remove();
+            $('.wytnij').remove();
+
+        var wiersze = $('#wiersze').val();
+
+
+
+        if(wiersze>10){
+            $('#tekst').append("<p class='wytnij'>Maksymalna wartość wierszy to 10!</p>");
+            wiersze =10;
+            $('#wiersze').val(10);
+
+        };
+
+        var kolumny = $('#kolumny').val();
+        if(kolumny>10){
+            $('#tekst').append("<p class='wytnij'>Maksymalna wartość kolumn to 10!</p>");
+            kolumny =10;
+            $('#kolumny').val(10);
+        };
+
+
+        for(i=0; i<wiersze; i++){
+            $('#pixel_canvas').append("<tr></tr>");
+
+
+            $('tr').addClass("table");
+            for(j=0; j<kolumny; j++){
+
+                $('tr:last').append("<td></td>");
+            }
+        }
+            $('#size').append("<span id='wstaw'></span>");
+
+            $('#wstaw').append(wiersze+ " x " + kolumny);
+
+
+
 
     });
 
