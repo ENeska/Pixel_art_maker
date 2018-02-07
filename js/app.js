@@ -48,7 +48,7 @@ $(function() {
         $(this).css("border", "4px solid black");
     });
 
-    $(document).on("mouseenter", 'td', function(event) {
+    $(document).on("click", 'td', function(event) {
         $(this).css("background-color", color);
     });
 });
