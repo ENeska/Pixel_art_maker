@@ -51,5 +51,17 @@ $(function() {
     $(document).on("click", 'td', function(event) {
         $(this).css("background-color", color);
     });
+
+    $(document).on('mousedown', function () {
+        $(this).css("background-color", color);
+        $('td').on('mouseover', function () {
+           $(this).css('background-color', color)
+        })
+    });
+
+    $(document).on('mouseup', function () {
+       $('td').off('mouseover')
+    })
+
 });
 
