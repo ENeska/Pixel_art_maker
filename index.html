@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,27 +17,22 @@
         <section id="section1">
         <h1 id="title">Pixel Art Maker</h1>
         </section>
+        <section id="poleMalowania">
 
-        <section id="section2">
-            <p id="size">Size: <span id="sizeDynamic"></span></p>
-            <table id="pixel_canvas"></table>
-        </section>
+            <div id="pole1">
+                <img src="style/icon/undo%20(3).png" class="chooseOption" id="wstecz">
+                <img src="style/icon/022-palette.png" class="chooseOption" id="wybierzKolor">
+                <img src="style/icon/048-eraser.png" class="chooseOption" id="white">
+                <img src="style/icon/033-rulers.png" class="chooseOption" id="siatka">
 
-        <section id="section3">
-            <h2 class="subtitle">Choose Grid Size:</h2>
 
-            <form id="sizePicker">
-                <span>Row:</span>
-                <input type="number" id="row" name="height" min="1" max="10" value="10">
-                <span>Column:</span>
-                <input type="number" id="column" name="width" min="1" max="10" value="10">
-            </form>
+            </div>
+            <div id="pole2">
+                <p id="size">Size: <span id="sizeDynamic"></span></p>
+                <table id="pixel_canvas"></table>
+            </div>
 
-            <div id="text"></div>
-            <button id="buttonGrey"> Draw </button>
-            <h2 class="subtitle">Pick A Color:</h2>
-
-            <div class="allPick">
+            <div id="pole3">
                 <div class="colorPick" id="color1"></div>
                 <div class="colorPick"  id="color2"></div>
                 <div class="colorPick"  id="color3"></div>
@@ -48,6 +43,28 @@
                 <div class="colorPick"  id="color8"></div>
                 <div class="colorPick"  id="color9"></div>
             </div>
+
+        </section>
+        <section id="section3">
+            <h2 class="subtitle">Choose Grid Size:</h2>
+
+            <div id="wymiary">
+
+                <form id="sizePicker">
+                    <span>Row:</span>
+                    <input type="number" id="row" name="height" min="1" max="10" value="10">
+                    <span>Column:</span>
+                    <input type="number" id="column" name="width" min="1" max="10" value="10">
+                </form>
+                <button id="buttonGrey">Draw</button>
+            </div>
+
+            <div id="text"></div>
+
+
+
+
+
 
     </section>
 
@@ -60,5 +77,4 @@
     </body>
 </html>
 
-//
 

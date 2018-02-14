@@ -46,22 +46,56 @@ $(function() {
     $(document).on('click', '.colorPick', function () {
         $(".colorPick").css("border", "2px solid black");
         $(this).css("border", "4px solid black");
+
     });
 
-    $(document).on("click", 'td', function(event) {
-        $(this).css("background-color", color);
+    $(document).on('click', '.chooseOption', function () {
+        $(".chooseOption").css("border", "2px solid black");
+        $(this).css("border", "4px solid black");
+        $(".chooseOption").removeClass("active");
+        $(this).addClass("active");
+
     });
 
-    $(document).on('mousedown', function () {
-        $(this).css("background-color", color);
-        $('td').on('mouseover', function () {
-           $(this).css('background-color', color)
+
+
+    $("#wybierzKolor").on("click", function() {
+
+            $(document).on("click", 'td', function (event) {
+                $(this).css("background-color", color);
+            });
+
+            $(document).on('mousedown', function () {
+                $(this).css("background-color", color);
+                $('td').on('mouseover', function () {
+                    $(this).css('background-color', color)
+                })
+            });
+
+            $(document).on('mouseup', function () {
+                $('td').off('mouseover')
+            })
+
+    });
+
+    $("#white").on("click", function() {
+
+        $(document).on("click", 'td', function (event) {
+            $(this).css("background-color", "white");
+        });
+
+        $(document).on('mousedown', function () {
+            $(this).css("background-color", "white");
+            $('td').on('mouseover', function () {
+                $(this).css('background-color', "white")
+            })
+        });
+
+        $(document).on('mouseup', function () {
+            $('td').off('mouseover')
         })
+
+
     });
-
-    $(document).on('mouseup', function () {
-       $('td').off('mouseover')
-    })
-
 });
 
